@@ -65,6 +65,9 @@
 /* Image processing module */
 #include "image_processing.h"
 
+/*ML module */
+#include "ml_model.h"
+
 /* Buffer size used for the file copy process */
 #ifndef CPY_BUFF_SIZE
 #define CPY_BUFF_SIZE       2048
@@ -367,6 +370,8 @@ void *mainThread(void *arg0)
     }
 
     Display_printf(display, 0, 0, "Top line height middle: %d", find_borders());
+
+    main_nn();
 
     /* debug spin */
 

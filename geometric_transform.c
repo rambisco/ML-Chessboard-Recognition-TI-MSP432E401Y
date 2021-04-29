@@ -29,8 +29,8 @@
 //float32_t top_left_x= 1114.0005479484073;
 //float32_t top_left_y= 547.9484072624166;
 
-int output_width = 256;
-int output_height = 256;
+int output_width = 224;
+int output_height = 224;
 
 //Matrix data to return not local
 float32_t Aff5_M_data[6];
